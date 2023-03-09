@@ -46,6 +46,17 @@
         color: #F7A70B;
         text-decoration: underline;
     }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav .dropdown {
+        display: none;
+        position: absolute;
+    }
 }
 
 /* -------------------------------------------------------------------------------- */

@@ -3,6 +3,7 @@
     --black: #000000;
     --navy-blue: #0D0C22;
     --grey: #53677C;
+    --lighter-grey: #F7F9FB;
     --light-blue: #0039FA;
     --orange: #F7A70B;
 }
@@ -24,6 +25,14 @@
         font-family: sans-serif;
     }
 
+    p,
+    a,
+    button,
+    input,
+    label {
+        font-size: 16px;
+    }
+
     a {
         text-decoration: none;
     }
@@ -32,14 +41,21 @@
         display: none;
     }
 
+    .header {
+        background-color: var(--grey);
+        color: var(--neutral-white);
+    }
+
+    .header a,
+    .header button {
+        color: var(--neutral-white);
+    }
+
     .header__view-offers {
         background-color: var(--navy-blue);
-        color: var(--neutral-white);
-
+        padding: 1rem;
         text-align: center;
         font-weight: 500;
-
-        padding: 1.5rem;
     }
 
     .header__view-offers a {
@@ -48,15 +64,184 @@
     }
 
     .nav {
+        background: transparent;
+        
+        display: block;
+    }
+
+    .nav__main {
+        width: 100%;
+        padding: 1rem;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .nav .dropdown {
-        display: none;
-        position: absolute;
+    .nav .logo__wrapper h1 {
+        font-size: 35px;
     }
+
+    .nav .btns-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav .btns-container .search__btn i {
+        font-size: 20px;
+    }
+
+    .nav .btns-container .login-link {
+        margin-left: 1rem;
+    }
+
+    .nav .btns-container .menu__btn {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav .btns-container .menu__btn i {
+        font-size: 25px;
+    }
+
+    .nav .dropdown {
+        background-color: brown;
+        
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav .dropdown__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1.2rem;
+    }
+
+    .header .hero--section {
+        margin: 0 1rem;
+        padding: 2rem 0 3rem 0;
+    }
+
+    .header .hero--section__text {
+        font-size: 24px;
+        font-weight: 600;
+
+        margin-bottom: 2rem;
+    }
+
+    .header .hero--section .submit-tutorials__btn {
+        background-color: var(--light-blue);
+        font-weight: 600;
+
+        border: none;
+        padding: 1rem 3rem;
+    }
+
+    .header .hero--section .jobs__btn {
+        background: transparent;
+        font-weight: 600;
+
+        border: none;
+        padding: 1rem 2rem;
+    }
+}
+
+.main .section-header {
+    font-size: 24px;
+}
+
+.main .blog--section__top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.main .blog--section {
+    padding: 3rem 1rem;
+}
+
+.main .blog--section__top .section--header {
+    flex-grow: 1;
+}
+
+.main .blog--section__top .blog--section__view-all-btn {
+    color: var(--light-blue);
+}
+
+.main .blog--section__top .arrow-btns {
+    background: none;
+    border: none;
+}
+
+.main .blog--section__top .arrow-btns i {
+    font-size: 27px;
+}
+
+.main .blog--section__top .arrow-btn--left {
+    margin: 1rem;
+}
+
+.main .blog--section__top .arrow-btns--wrapper {
+    margin-left: 2rem;
+}
+
+.main .blog--section__main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main .blog--section__main::-webkit-scrollbar {
+    display: none;
+}
+
+.main .blog {
+    display: block;
+
+    width: 300px;
+    border: solid 2px var(--grey);
+}
+
+.main .blog .blog__img--wrapper {
+    width: 100%;
+    aspect-ratio: 1.8;
+    border-bottom: solid 1px var(--grey);
+}
+
+.main .blog .blog__description--wrapper {
+    padding: 0.5rem;
+    border-bottom: solid 1px var(--grey);
+}
+
+.main .blog .blog__description--wrapper h3 {
+    font-size: 20px;
+    margin: 1.5rem 0;
+}
+
+.main .blog .blog__description--wrapper .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: var(--grey);
+}
+
+.main .blog .blog__description--wrapper .date--wrapper {
+    margin-bottom: 1.5rem;
 }
 
 /* -------------------------------------------------------------------------------- */

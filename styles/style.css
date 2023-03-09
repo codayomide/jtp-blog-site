@@ -32,7 +32,7 @@
         display: none;
     }
 
-    #mobile .header__view-offers {
+    .header__view-offers {
         background-color: var(--navy-blue);
         color: var(--neutral-white);
 
@@ -42,7 +42,7 @@
         padding: 1.5rem;
     }
 
-    #mobile .header__view-offers a {
+    .header__view-offers a {
         color: #F7A70B;
         text-decoration: underline;
     }

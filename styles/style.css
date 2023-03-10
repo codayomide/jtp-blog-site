@@ -18,11 +18,12 @@
 
 a{
     text-decoration: none;
-    color: var(--black)
+    color: var(--black);
 }
 
 button{
     padding: 16px 36px;
+    border: none;
     font-size: 20px;
     font-weight: 600;
     color: var(--neutral-white);
@@ -42,28 +43,18 @@ h1, h2, h3, h4{
 }
 
     /* HEADER */
-    .top{
-        color: var(--neutral-white);
-        background-color: var(--navy-blue);
-        font-size: 24px;
-        font-weight: 500;
-        padding: 24px 0;
-        text-align: center;
-    }
-
-    .top a{
-        color: var(--orange);
-    }
-
     .nav{
         display: flex;
         justify-content: space-between;
-        padding: 24px 96px;
+        padding: 22px 96px;
         font-size: 24px;
         font-family: 'Syne', sans-serif;
         letter-spacing: 2px;
         width: 100%;
-       
+        background-color: var(--neutral-white);
+        position: fixed;
+        top: 0;
+        z-index: 99;
     }
 
     /* NAVIGATION BAR */
@@ -75,27 +66,32 @@ h1, h2, h3, h4{
 
     .nav-left .logo__wrapper{
         margin-right: 28px;
-        color: var(--neutral-white);
+        color: var(--black);
         font-size: 36px;
     }
 
     .nav-left .dropdown__links{
         margin: 0 18px;
-        color: var(--neutral-white);
+        color: var(--black);
     }
 
     .nav-right{
         display: flex;
         align-items: center;
     }
+
+    .nav-right i{
+        cursor: pointer;
+    }
  
     .nav-right a{
-        margin: 0 24px;
-        color: var(--neutral-white);
+        margin: 0 32px;
+        color: var(--black);
     }
 
     /* HERO SECTION */
     .hero--section{
+        margin-top: 127.2px;
         padding: 144px 196px;
         background-image: url(/resources/images/bg.png);
         background-size: cover;

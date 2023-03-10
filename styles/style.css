@@ -172,7 +172,7 @@ h1, h2, h3, h4{
     cursor: pointer;
 }
 
-.arrow-btns--wrapper #right{
+.arrow-btns--wrapper .right-btn{
     margin-left: 24px;
 }
 

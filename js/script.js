@@ -1,5 +1,5 @@
-let left = document.getElementById('left');
-let right = document.getElementById('right');
+let left = document.querySelectorAll('.left-btn');
+let right = document.querySelectorAll('.right-btn');
 
 let blog = document.getElementsByClassName('blog');
 let blog_page = Math.ceil(blog.length/4);

@@ -145,10 +145,11 @@ h1, h2, h3, h4{
 .blog--section-wrapper{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .blog--section{
-    width: 1640px;
+    width: 100%;
 }
 
 .blog--section-header{

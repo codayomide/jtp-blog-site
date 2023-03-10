@@ -41,39 +41,8 @@ h1, h2, h3, h4{
     width: 100%;
 }
 
-/* ------------------------------------ Mobile ------------------------------------ */
-
-@media screen and (min-width: 0px) {
-    #desktop {
-        display: none;
-    }
-}
-
-/* -------------------------------------------------------------------------------- */
-
-
-/* ------------------------------------ Desktop ------------------------------------ */
-
-@media screen and (min-width: 900px) {
-    #mobile,
-    #tablet {
-        display: none;
-    }
-
-    #desktop{
-        display: block;
-    }
-
     /* HEADER */
-    header{
-        height: 550px;
-        background-image: url(/resources/images/bg.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--neutral-white);
-    }
-
-    header .top{
+    .top{
         color: var(--neutral-white);
         background-color: var(--navy-blue);
         font-size: 24px;
@@ -93,8 +62,10 @@ h1, h2, h3, h4{
         font-size: 24px;
         font-family: 'Syne', sans-serif;
         letter-spacing: 2px;
+        /* background: rgba(0, 0, 0, 0.2); */
         width: 100%;
-        position: fixed;
+        /* position: sticky;
+        top: 0; */
     }
 
     /* NAVIGATION BAR */
@@ -106,6 +77,7 @@ h1, h2, h3, h4{
 
     .nav-left .logo__wrapper{
         margin-right: 28px;
+        color: var(--neutral-white);
         font-size: 36px;
     }
 
@@ -127,6 +99,10 @@ h1, h2, h3, h4{
     /* HERO SECTION */
     .hero--section{
         padding: 144px 196px;
+        background-image: url(/resources/images/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--neutral-white);
     }
     .hero--section__text{
         font-size: 56px;
@@ -234,7 +210,7 @@ h1, h2, h3, h4{
     text-align: center;
 }
 
-.programming-section .section-header{
+.programming-section-wrapper .section-header{
     text-align: left;
     margin-bottom: 72px;
 }
@@ -245,9 +221,8 @@ h1, h2, h3, h4{
 }
 
 .tutorials{
-    width: 180px;
-    height: 200px;
-    background-color: var(--neutral-white);
+    width: 160px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,8 +232,8 @@ h1, h2, h3, h4{
 }
 
 .tutorials img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 36px;
 }
 
@@ -424,7 +399,383 @@ h1, h2, h3, h4{
     margin-left: 12px;
 }
 
+@media (max-width: 1440px){
+
+    button{
+        padding: 12px 28px;
+    }
+    .nav{
+        display: none;
+    }
+
+    /* HERO SECTION */
+
+    .hero--section{
+        padding: 96px 120px;
+    }
+
+    .hero--section__text{
+        font-size: 42px;
+        margin-bottom: 46px;
+    }
+
+    .blog-section-wrapper{
+        padding: 72px 120px 0 120px;
+    }
+
+    .blog--section-header{
+        padding-bottom: 24px;
+    }
+
+    /* PROGRAMMING COURSES SECTION*/
+    .programming-section-wrapper{
+        padding: 96px 120px;
+    }
+
+    .programming-section-wrapper .section-header{
+        margin-bottom: 48px;
+    } 
+
+    .tutorials{
+        margin-bottom: 36px;
+    }
+
+    /* WHAT WE DO SECTION */
+
+    .what-we-do-section{
+        padding: 96px 120px;
+    }
+
+    .what-we-do-section .section-header{
+        font-size: 42px;
+        padding: 48px 0;
+    }
+
+    .what-we-do{
+        width: 300px;
+    }
+
+    .what-we-do h2{
+        height: 72px;
+        margin-bottom: 12px;
+    }
+
+    /* PROMOTION SECTION */
+
+    .promotions-section{
+        padding: 96px 120px;
+    }
+
+    /* FOOTER */
+
+    .footer-wrapper{
+        padding: 0 80px 32px 80px;
+    }
+
+    .footer-subscribe-section{
+        padding: 36px 24px;
+    }
+
+    .newsletters-section h2{
+        font-size: 28px;
+    }
+
+    .newsletters-section p{
+        font-size: 18px;
+    }
+
+    .newsletters-section p a{
+        display: block;
+    }
+
+    .form input[type="text"] {
+        width: 350px;
+        padding: 18px;
+    }
+
+    .form button{
+        padding: 18px;
+    }
+
+    .footer-nav-wrapper{
+        padding: 0 28px;
+    }
+
+    .footer-nav a{
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 1150px){
+    .hero--section{
+        padding: 64px 86px;
+    }
+
+    .hero--section__text{
+        font-size: 38px;
+        margin-bottom: 36px;
+    }
+
+    .blog-section-wrapper{
+        padding: 64px 86px 0 86px;
+    }
+
+    .programming-section-wrapper{
+        padding: 64px 86px;
+    }
+
+    .what-we-do-section{
+        padding: 64px 86px;
+    }
+
+    .what-we-do-wrapper{
+        padding: 0 36px;
+    }
+
+    .what-we-do{
+        width: 250px;
+    }
+
+    .newsletters-section p{
+        font-size: 15px;
+    }
+
+    .form input[type="text"] {
+        width: 300px;
+    }
+
+    .form button{
+        font-size: 18px;
+        padding: 18px 12px;
+    } 
+}
+
+@media screen and (max-width: 1050px) {
+
+    /* HERO SECTION */
+    .hero--section__text br{
+        display: none;
+    }
+
+
+
+    /* PROGRAMMING COURSES SECTION */
+
+    .tutorials-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* WHAT WE DO SECTION */
+    .what-we-do-wrapper{
+        flex-direction: column;
+    }
+
+    .what-we-do{
+        width: 100%;
+    }
+
+    .what-we-do .img-wrapper{
+        margin-bottom: 8px;
+    }
+
+    .what-we-do h2{
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    /* PROMOTION SECTION */
+    .sponsors-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .sponsors-wrapper .img-container{
+        margin-bottom: 42px;
+    }
+    /* FOOTER */
+   .footer-subscribe-section{
+    flex-direction: column;
+   }
+   
+   .form input[type="text"]{
+    width: 70%;
+   }
+
+   .footer-nav-wrapper{
+    flex-direction: column;
+   }
+
+   .footer-nav{
+    width: 100%;
+   }
+
+   .nav-links{
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    /* HERO SECTION */
+
+    .hero--section__text{
+        font-size: 28px;
+    }
+
+    .tutorials-wrapper{
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .tutorials{
+        margin-left: 16px;
+        width: 200px;
+    }
+
+    .what-we-do-section .section-header{
+        font-size: 30px;
+    }
+
+    .what-we-do-section .section-header br{
+        display: none;
+    }
+
+    .sponsors-wrapper{
+        grid-template-columns: auto auto;
+    }
+
+    .footer-nav a{
+        font-size: 24px;
+    }
 
 }
 
-/* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 670px){
+    button{
+        padding: 8px 12px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .hero--section{
+        padding: 32px 36px;
+    }
+
+    .hero--section__text{
+        font-size: 24px;
+    }
+
+    .btn-container a{
+        font-size: 18px;
+    }
+
+    .blog-section-wrapper{
+        padding: 32px;
+    }
+
+    .blog--section-header h2{
+        font-size: 22px;
+    }
+
+    .blog--section-header a{
+        font-size: 16px;
+    }
+
+    .arrow-btns--wrapper i{
+        font-size: 16px;
+    }
+
+    .arrow-btns--wrapper .right-btn{
+        margin-left: 6px;
+    }
+
+    .blog{
+        width: 260px;
+        min-width: 260px;
+        height: auto;
+        margin-right: 8px;
+    }
+
+    .blog__img--wrapper{
+        height: 180px;
+    }
+
+    .blog__description--wrapper{
+        margin: 0 8px;
+    }
+
+    .blog__description--wrapper h3{
+        margin: 8px 0;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        height: 70px;
+    }
+
+    .details{
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    .blog__genre--wrapper{
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .programming-section-wrapper{
+        padding: 32px 36px;
+    }
+
+    .programming-section-wrapper .section-header{
+        margin-bottom: 18px;
+    }
+
+    .tutorials{
+        margin-left: 8px;
+        width: 120px;
+        height: auto;
+    }
+
+    .tutorials h3{
+        font-size: 16px;
+    }
+
+    .what-we-do-section{
+        padding: 32px 36px;
+    }
+
+    .what-we-do-section .section-header{
+        padding: 12px;
+    }
+
+    .promotions-section{
+        padding: 32px 36px;
+    }
+
+    .our-benefits h3{
+        font-size: 18px;
+    }
+
+    .sponsors-wrapper{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .footer-wrapper{
+        padding: 16px 18px;
+    }
+
+    .form input[type="text"]{
+        width: 55%;
+    }
+
+    .footer-nav a{
+        font-size: 20px;
+    }
+
+    .footer-wrapper .nav-links a{
+        font-size: 15px;
+    }
+}

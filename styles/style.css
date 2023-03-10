@@ -126,7 +126,7 @@ h1, h2, h3, h4{
 
     /* HERO SECTION */
     .hero--section{
-        margin: 144px 196px 96px 196px;
+        padding: 144px 196px;
     }
     .hero--section__text{
         font-size: 56px;
@@ -142,21 +142,15 @@ h1, h2, h3, h4{
     }
 
     /* BLOG SECTION */
-.blog--section-wrapper{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.blog--section{
-    width: 100%;
+.blog-section-wrapper{
+    padding: 72px 196px 0 196px;
 }
 
 .blog--section-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 48px 0;
+    padding-bottom: 48px;
 }
 
 .blog--section-header h2{
@@ -236,14 +230,7 @@ h1, h2, h3, h4{
 
 /* PROGRAMMING COURSES SECTION */
 .programming-section-wrapper{
-    display: flex;
-    justify-content: center;
-    background-color: #dde7f2;
-}
-
-.programming-section{
-    width: 1640px;
-    padding: 72px 0;
+    padding: 72px 196px;
     text-align: center;
 }
 
@@ -276,16 +263,10 @@ h1, h2, h3, h4{
 }
 
 /* WHAT WE DO SECTION */
-.what-we-do-section-wrapper{
-    display: flex;
-    justify-content: center;
-    background-color: #dde7f2;
-    padding-bottom: 72px;
-}
-
 .what-we-do-section{
-    width: 1640px;
+    padding: 72px 196px;
     text-align: center;
+    background-color: grey;
 }
 
 .what-we-do-section .section-header{
@@ -329,15 +310,9 @@ h1, h2, h3, h4{
 }
 
 /* PROMOTION SECTION */
-.promotion-section-wrapper{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 72px;
-}
-
 .promotions-section{
-    width: 1640px;
     text-align: center;
+    padding: 72px 196px;
 }
 
 .our-benefits h3{

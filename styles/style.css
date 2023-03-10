@@ -43,7 +43,7 @@ h1, h2, h3, h4{
 }
 
     /* HEADER */
-    .nav{
+    .nav {
         display: flex;
         justify-content: space-between;
         padding: 22px 96px;
@@ -55,6 +55,10 @@ h1, h2, h3, h4{
         position: fixed;
         top: 0;
         z-index: 99;
+    }
+
+    .nav.mobile {
+        display: none;
     }
 
     /* NAVIGATION BAR */
@@ -155,7 +159,7 @@ h1, h2, h3, h4{
 .blog{
     min-width: 380px;
     width: 380px;
-    height: 523.07px; 
+    height: auto; 
     margin-right: 20px;
     border: 1px solid #000;
 
@@ -170,6 +174,11 @@ h1, h2, h3, h4{
     background-color: #000;
 }
 
+.blog__img--wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
 .blog__description--wrapper{
     margin: 0 24px;
 }
@@ -179,7 +188,7 @@ h1, h2, h3, h4{
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 1.5px;
-    height: 100px;
+    height: 160px;
 }
 
 .details{
@@ -398,7 +407,8 @@ h1, h2, h3, h4{
     button{
         padding: 12px 28px;
     }
-    .nav{
+    
+    .nav-right button {
         display: none;
     }
 
@@ -503,6 +513,10 @@ h1, h2, h3, h4{
 }
 
 @media (max-width: 1150px){
+    .nav {
+        font-size: 20px;
+        padding: 22px 50px;
+    }
     .hero--section{
         padding: 64px 86px;
     }
@@ -546,7 +560,39 @@ h1, h2, h3, h4{
     } 
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1005px) {
+    .nav.desktop {
+        display: none;
+    }
+
+    .nav.mobile {
+        display: block;
+    }
+
+    .nav > div {
+        width: 100%;
+    }
+
+    .nav__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__dropdown {
+        padding: 1rem 0;
+        display: block;
+    }
+
+    .nav__dropdown .dropdown__links {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     /* HERO SECTION */
     .hero--section__text br{
@@ -686,9 +732,9 @@ h1, h2, h3, h4{
     }
 
     .blog{
-        width: 260px;
+        width: 450px;
         min-width: 260px;
-        height: auto;
+        height: 400px;
         margin-right: 8px;
     }
 
@@ -705,7 +751,7 @@ h1, h2, h3, h4{
         font-size: 16px;
         font-weight: 300;
         letter-spacing: 1px;
-        height: 70px;
+        height: 120px;
     }
 
     .details{

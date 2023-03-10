@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container" id="desktop">
+    <div class="container">
         <header class="header">
 
-        <nav class="nav">
+        <nav class="nav desktop">
             <div class="nav-left">
                 <div class="logo__wrapper">
                     <h2>Logo</h2>
@@ -48,9 +48,44 @@
 
                 <button class="submit-tutorials__btn">Submit Tutorials</button>
             </div>
-
-            
         </nav>
+
+        <nav class="nav mobile">
+            <div class="nav__main">
+                <div class="nav-left">
+                    <div class="logo__wrapper">
+                        <h2>Logo</h2>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#" class="login-link">Login</a>
+                    <button class="menu__btn">Submit Tutorials</button>
+                </div>
+            </div>
+
+            <div class="nav__dropdown">
+                <a href="#" class="dropdown__links">
+                    <span>Programming</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="#" class="dropdown__links">
+                    <span>Data Science</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                
+                <a href="" class="dropdown__links">
+                    <span>DevOps </span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="" class="dropdown__links">
+                    <span>Design</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+        </nav>
+
         <div class="hero--section">
             <h1 class="hero--section__text">
                 Explore the world's top curated courses & tutorials <br>
@@ -62,9 +97,7 @@
                 <a href="#">Jobs</a>
             </div>
 
-            </div>
-            </div>
-        </header>
+        
         </div>
         </header>
 
@@ -409,8 +442,7 @@
            </div>
 
         </footer>
-    </div>
-
+        </div>
     <script src="js/script.js"></script>
 </body>
 </html>

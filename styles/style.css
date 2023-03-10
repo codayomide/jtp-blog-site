@@ -581,7 +581,7 @@ h1, h2, h3, h4{
 
     .nav__dropdown {
         padding: 1rem 0;
-        display: block;
+        display: none;
     }
 
     .nav__dropdown .dropdown__links {

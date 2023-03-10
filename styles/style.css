@@ -154,7 +154,7 @@ h1, h2, h3, h4{
 }
 
 .blog--section-header h2{
-    width: 85%;
+    width: 75%;
     font-size: 36px;
 }
 
@@ -329,7 +329,7 @@ h1, h2, h3, h4{
 }
 
 .sponsors-wrapper img{
-    width: 200px;
+    width: 150px;
 }
 
 /* TESTIMONIALS SECTION */
